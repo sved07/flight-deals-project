@@ -27,3 +27,35 @@ An automated Python application that monitors flight prices between a designated
 
 ---
 
+## ⚙️ Setup & Installation
+
+### 1. Prerequisites
+Clone the repository to your local machine:
+```bash
+git clone https://github.com/ItzNotCheetah/flight-deals-project.git
+cd flight-deal-finder
+```
+Install the Required Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Environment Variables
+Create a file named `.env` in the root directory of your project and populate it with your credentials:
+
+```env
+# Sheety API Configuration
+SHEETY_TOKEN=your_sheety_bearer_token
+
+# SerpApi Configuration
+SERP_API_KEY=your_serpapi_private_key
+
+# Twilio API Configuration
+TWILIO_ACCOUNT_SID=your_twilio_account_sid
+TWILIO_AUTH_TOKEN=your_twilio_auth_token
+TWILIO_WHATSAPP_FROM=+1XXXXXXXXXX
+TWILIO_WHATSAPP_TO=+1XXXXXXXXXX
+```
+
+### 3. Google Sheet Setup
+Make a copy of this google sheet and set it up using Sheety api: https://docs.google.com/spreadsheets/d/1JCruIebyQvOpOMX_y3TkwOxKODr3H9L6hwXq0Xhd3pI/edit?usp=sharing
